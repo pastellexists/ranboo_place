@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         r/placestart logo template
-// @namespace    https://github.com/r-placestart/overlay/
-// @version      7
-// @description  r/placestart logo template
-// @author       portalthree
+// @name         r/place ranboo logo template
+// @namespace    https://github.com/pastellexists/ranboo_place
+// @version      1
+// @description  r/place ranboo logo template
+// @author       portalthree and pastellexists
 // @match        https://hot-potato.reddit.com/embed*
 // @match        https://www.reddit.com/r/place/*
 // @match        https://new.reddit.com/r/place/*
@@ -19,11 +19,11 @@
 
 
 //TODO: When changing the version, please do change the version in the userscript information as well as the version in version.json
-const VERSION = "7";
+const VERSION = "1";
 
-const updateURL = "https://github.com/r-placestart/overlay/raw/main/overlay.user.js";
-const overlayLink = "https://raw.githubusercontent.com/r-placestart/overlay/main/overlay.png";
-const versionLink = "https://raw.githubusercontent.com/r-placestart/overlay/main/version.json";
+const updateURL = "https://github.com/pastellexists/ranboo_place/raw/main/overlay.user.js";
+const overlayLink = "https://raw.githubusercontent.com/pastellexists/ranboo_place/main/overlay.png";
+const versionLink = "https://raw.githubusercontent.com/pastellexists/ranboo_place/main/version.json";
 
 var NOTIFIED = false;
 var START_NOTIFIED = false;
@@ -97,7 +97,7 @@ function checkForUpdates(){
 }
 
 function LOG(log){
-    console.log("R/PLACESTART " + VERSION + " | " + log);
+    console.log("R/PLACE RANBOO " + VERSION + " | " + log);
 }
 
 function requiresUpdate(){
@@ -117,10 +117,10 @@ function requiresUpdate(){
 function startNotify(){
     if(!START_NOTIFIED){
         Toastify({
-            text: `Thanks for contributing to r/placestart! (click here to join our discord)`,
+            text: `Thanks for contributing to the epic minecraft gameing community!`,
             duration: SECOND * 10,
             onClick: () => {
-                window.location = "https://discord.gg/sGCpCsjA45";
+                window.location = "https://www.youtube.com/watch?v=yShBUej0YIQ";
             }
         }).showToast();
 
